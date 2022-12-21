@@ -1,0 +1,86 @@
+
+.App{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    background-image: url("https://cdn.pixabay.com/photo/2016/11/05/12/38/fuzzy-1800136_960_720.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    align-items: center;
+    font-family: 'Raleway', sans-serif;
+    color: rgb(62, 58, 58);
+}
+
+body{
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+input{
+    display: block;
+}
+
+.weatherCard{
+    border: 2px solid white;
+    padding:  2rem 2rem 2rem;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgba(255, 255,255, 0.3);
+    margin: 0 1rem;
+}
+
+.weatherCardButton{
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s background;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: rgb(80, 79, 79)
+}
+
+.weatherCardButton:hover{
+    background-color: rgba(0, 0, 0, 0.4);
+    color:rgba(255, 255, 255, 0.751)
+}
+
+.weatherCardBody > ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+
+.weatherCardBody > ul > li{
+    text-transform: capitalize;
+}
+
+.weatherCard-footer{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    margin-top: 1rem;
+}
+.weatherCard-footer > input {
+    border:none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+.weatherImage{
+    animation: 8s infinite float;
+}
+
+@keyframes float {
+    0%{transform: translate(0,0);}
+    25%{transform: translate(0, -5px);}
+    75%{transform: translate(0,5px);}
+    100%{transform: translate(0,0);}
+}
